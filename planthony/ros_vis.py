@@ -6,6 +6,10 @@ import rospy
 
 from __future__ import print_function
 
+from . import point
+
+
+
 class VisNode:
     def __init__(self):
 
@@ -25,21 +29,6 @@ class VisNode:
     def _node_request_handler(self):
         return
 
-class ArmNode:
-    def __init__(self):
-        return
-
-    def get_pos(self):
-        rospy.wait_for_service("vis")
 
 
-def main():
-    vis = VisNode()
-    
 
-
-    vis.start()
-    return
-
-if __name__ == "__main__":
-    main()
